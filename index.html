@@ -8,7 +8,19 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div style="display: flex; align-items: center; flex-direction: column;">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <h5>Choose Your Play</h5>
+        <div style="display: flex; flex-direction: row; gap: 10px;">
+            <button id="btn_rock" value="Rock" onclick="Gameplay(this.value)">Rock</button>
+            <button id="btn_paper" value="Paper" onclick="Gameplay(this.value)">Paper</button>
+            <button id="btn_scissors" value="Scissors" onclick="Gameplay(this.value)">Scissors</button>
+        </div>
+        <h5 id="choice"></h5>
+        <h3 id="txt_result"></h3>
+        <h2 id="txt_score"></h2>
+    </div>
 </body>
 </html>
